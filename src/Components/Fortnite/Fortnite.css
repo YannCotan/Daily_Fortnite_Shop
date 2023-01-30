@@ -1,0 +1,228 @@
+.container{
+    width: 100%;
+    min-height: 90vh;
+    max-height: max-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 2vw;
+    overflow-y: overlay;
+    position: absolute;
+    top: 5vh;
+}
+h1{
+    font-size: 24px;
+}
+.Spinn{
+    font-size: 30px;
+}
+img{
+    max-height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.common{
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    margin-right: 2vw;
+    overflow: hidden;
+    background-image: radial-gradient(white , rgb(75, 75, 75));
+    transition: all 0.5s ease;
+}
+.uncommon{
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    margin-right: 2vw;
+    overflow: hidden;
+    background-image: radial-gradient(white , rgb(14, 224, 49));
+    transition: all 0.5s ease;
+}
+.rare{
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    margin-right: 2vw;
+    overflow: hidden;
+    background-image: radial-gradient(white , rgb(85, 85, 255));
+    transition: all 0.5s ease;
+}
+.lava{
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    margin-right: 2vw;
+    overflow: hidden;
+    background-image: radial-gradient(white , rgb(255, 40, 11));
+    transition: all 0.5s ease;
+}
+
+.epic{
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    margin-right: 2vw;
+    overflow: hidden;
+    background-image: radial-gradient(white , rgb(152, 0, 223));
+    transition: all 0.5s ease;
+}
+.icon{
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    margin-right: 2vw;
+    overflow: hidden;
+    background-image: radial-gradient(white , rgb(223, 145, 0));
+    transition: all 0.5s ease;
+}
+.legendary{
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    margin-right: 2vw;
+    overflow: hidden;
+    background-image: radial-gradient(white , rgb(223, 71, 0));
+    transition: all 0.5s ease;
+}
+.marvel{
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    margin-right: 2vw;
+    overflow: hidden;
+    background-image: radial-gradient(white , rgb(255, 17, 57));
+    transition: all 0.5s ease;
+}
+.slurp{
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    margin-right: 2vw;
+    overflow: hidden;
+    background-image: radial-gradient(white , rgb(17, 227, 255));
+    transition: all 0.5s ease;
+}
+.gaminglegends{
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    margin-right: 2vw;
+    overflow: hidden;
+    background-image: radial-gradient(rgb(255, 217, 0) , rgb(17, 227, 255) , rgb(255, 65, 17));
+    transition: all 0.5s ease;
+}
+.common:hover ,
+.uncommon:hover , 
+.rare:hover, 
+.epic:hover, 
+.marvel:hover, 
+.legendary:hover, 
+.icon:hover,
+.lava:hover,
+.slurp:hover,
+.gaminglegends:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.Item__img{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Item__name{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.featured__titre{
+    width: 100vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+@media (max-width:720px) {
+    .container{
+        justify-content: center;
+        padding-left: 0;
+    }
+    .common ,
+    .uncommon , 
+    .rare, 
+    .epic, 
+    .marvel, 
+    .legendary, 
+    .icon,
+    .lava,
+    .slurp,
+    .gaminglegends{
+        width: 100px;
+        height: 140px;
+    }
+    .Item__name{
+        font-size: 15px;
+    }
+}

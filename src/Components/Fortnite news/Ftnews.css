@@ -1,0 +1,175 @@
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+.Br{
+    width: 90%;
+    height: max-content;
+    max-height: max-content;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 5vh;
+    margin-bottom: 1vh;
+}
+.News_br_title{
+    width: 100%;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    text-align: left;
+    font-size: 35px;
+}
+.cont{
+    width: 100%;
+    height: max-content;
+    max-height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Br2{
+    width: 90%;
+    height: max-content;
+    max-height: max-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 5vh;
+}
+.news{
+    height: max-content;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.more{
+    background-color: rgba(204, 204, 204, 0.089);
+    width: 30%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 3vh;
+    margin-top: 1vh;
+    float: right;
+    font-weight: 500;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999999;
+}
+
+.more::before{
+    content: '';
+    position: absolute;
+    height: 150px;
+    width: 50%;
+    background-image: linear-gradient(#00ccff,#d400d4);
+    animation: animate 3s linear infinite;
+    z-index: -9999;
+    color: white;
+}
+.more::after{
+    content: 'voir plus';
+    position: absolute;
+    background-color: rgb(76, 0, 255);
+    inset: 2px;
+    border-radius: 10px;
+    z-index: 9999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.title{
+    position: absolute;
+    bottom: 2vh;
+    left: 2vh;
+    font-size: 35px;
+    font-weight: 700;
+    transform: translateY(10.5vh);
+    transition: all 0.5s ease;
+    text-align: left;
+    max-width: 70%;
+}
+.news:hover{
+    transform: translateY(-1vh);
+}
+.news:hover .title{
+    transform: translateY(0);
+}
+.news:hover img{
+    transform: scale(1.2vh);
+}
+.news:hover .message{
+    opacity: 1;
+}
+.news:hover .overlay{
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.message{
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0;
+    color: rgb(221, 221, 221);
+    max-height: 100px;
+    overflow-y: auto;
+    transition: all 2s ease;
+}
+
+.Br .news img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+@media (max-width : 720px) {
+    .news{
+        height: max-content;
+    }
+    .Br .news img{
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        vertical-align: middle;
+        border-radius: 10px;
+    }
+    .Br2{
+        flex-direction: column;
+    }
+    .Br2 .news img{
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        vertical-align: middle;
+        border-radius: 10px;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .message{
+        font-size: 14px;
+    }
+}

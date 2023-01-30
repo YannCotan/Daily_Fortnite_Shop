@@ -1,0 +1,11 @@
+.Container{
+    width: 100%;
+    min-height: 90vh;
+    max-height: max-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 5vh;
+}
